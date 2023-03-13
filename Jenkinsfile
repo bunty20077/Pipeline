@@ -5,6 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'go version'
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
     }
